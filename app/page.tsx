@@ -14,6 +14,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea"
 import { Upload, Download, Copy, ImageIcon, Table, FileText, Terminal, Code, Cpu, Zap } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
+import { WelcomePopup } from "@/components/welcome-popup"
 
 const ASCII_CHARS = {
   simple: " .:-=+*#%@",
@@ -447,6 +448,7 @@ export default function PixelToTextConverter(): ReactElement {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 p-4">
+      <WelcomePopup />
       <div className="max-w-6xl mx-auto space-y-6">
         {/* Hero Section with Assembly Code Emphasis */}
         <div className="text-center space-y-4">
